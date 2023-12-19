@@ -4,27 +4,30 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 // 부모 클래스로 도형 클래스 정의
-abstract class Shape {
+class Shape {
     protected ArrayList<Integer> x;
     protected ArrayList<Integer> y;
-    Scanner sc = new Scanner(System.in);
+    protected Scanner scanner;
 
     public Shape() {
         this.x = new ArrayList<>();
         this.y = new ArrayList<>();
+        this.scanner = new Scanner(System.in);
     }
 
     public void getCoordinates(int XYnum) {
-        for(int i = 0; i < XYnum; i++) {
+        for (int i = 0; i < XYnum; i++) { // 예외처리가 질문 필요
             System.out.print((i + 1) + "번째 좌표의 x좌표: ");
-            x.add(sc.nextInt());
+            x.add(scanner.nextInt());
             System.out.print((i + 1) + "번째 좌표의 y좌표: ");
-            y.add(sc.nextInt());
+            y.add(scanner.nextInt());
         }
     }
 
-    // 각 도형의 둘레를 계산하는 메소드, 하위 클래스에서 오버라이딩할 것
-    public double calculatePerameter() { // 추상 메서드로 사용하는 게 더 적절해 보임 <- 질문
+    public double calculatePerimeter() {
         return 0.0;
     }
+
+
+    // getter setter를 활용한 코드로 변경해보기
 }

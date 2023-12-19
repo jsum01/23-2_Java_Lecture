@@ -18,7 +18,7 @@ public class LibManagerApp {
         System.out.println("|    5. 대출    |");
         System.out.println("|    6. 반납    |");
         System.out.println("|    7. 목록    |");
-        System.out.println("|    8. 종료    |");
+        System.out.println("|    0. 종료    |");
         System.out.println("=-=-=-=-=-=-==-=");
         System.out.print("입력:");
 
@@ -69,7 +69,7 @@ public class LibManagerApp {
         System.out.println("도서 등록이 완료되었습니다.");
     }
 
-    // 책 정보 입력
+    // 책 정보 출력
     static void list() {
         Book item;
 

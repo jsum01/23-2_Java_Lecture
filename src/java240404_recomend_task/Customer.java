@@ -1,4 +1,4 @@
-package miniSungdong;
+package ManageUser;
 
 import java.time.LocalDateTime;
 
@@ -9,6 +9,7 @@ public class Customer extends Users {
         super(id, name, age, joined, userType, discount_rate);
         this.customer_type = customer_type;
     }
+
 
     public int getCustomer_type() {
         return customer_type;

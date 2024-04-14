@@ -1,30 +1,31 @@
-package miniSungdong;
+package ManageUser;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
+
 /*
 * 프로그램 개요
 * [ 회원 관리 시스템 ]
 * 컬럼 : 고유 아이디, 고객명, 고객 나이, 고객 유형, 가입일
 * */
 public class Users {
-    private int id; // 고유 아이디
-    private String name; // 고객명
-    private int age; // 고객 나이
-    private LocalDateTime joined; // 가입일
-    private int userType;
-    private int discount_rate; // 할인률
+    int id; // 고유 아이디
+    String name; // 고객명
+    int age; // 고객 나이
+    LocalDateTime joined; // 가입일
+    int userType;
+    int discount_rate; // 할인률
 
 
 
     public Users(int id, String name, int age, LocalDateTime joined, int userType, int discount_rate) {
-        id = id;
-        name = name;
-        age = age;
-        joined = joined;
-        userType = userType;
-        discount_rate = discount_rate;
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.joined = joined;
+        this.userType = userType;
+        this.discount_rate = discount_rate;
     }
+
 
     public int getId() {
         return id;

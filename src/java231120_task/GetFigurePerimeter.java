@@ -1,4 +1,4 @@
-package javatask;
+package java231120_task;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

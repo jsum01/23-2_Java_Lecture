@@ -1,4 +1,4 @@
-package javatask;
+package java231120_task;
 
 class Square extends Shape {
 

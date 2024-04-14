@@ -1,4 +1,4 @@
-package java_exception_practice;
+package java24mid.review.exception.score;
 
 import java.util.Scanner;
 

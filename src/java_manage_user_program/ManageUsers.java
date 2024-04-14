@@ -1,4 +1,4 @@
-package java240404_recomend_task;
+package java_manage_user_program;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

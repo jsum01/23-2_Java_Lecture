@@ -13,19 +13,19 @@ public class StudentInfoManager extends Student {
         Student student = new Student();
 
 
-        /** 이름 입력 및 검사*/
+        // 이름 입력 및 검사
         while (true) {
             System.out.println("이름을 입력하십시오.");
             String name = sc.nextLine();
             if(student.setName(name)) break;
-        };
+        }
 
-        /** 주민등록번호 입력 및 검사*/
+        // 주민등록번호 입력 및 검사
         while (true) {
             System.out.println("주민등록번호를 입력하십시오.");
             String jumin = sc.nextLine();
             if(student.setJumin(jumin)) break;
-        };
+        }
 
         // 입력받은 정보 출력
         System.out.println("학생 정보:");

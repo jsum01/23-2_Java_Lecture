@@ -11,20 +11,16 @@ public class Student implements RegexIF{
     /** 기본 생성자 */
     public Student() { }
 
-    /**
-     * 학생의 이름과 주민번호를 할당한 상태로 인스턴스를 생성합니다.
-     * @param name
-     * @param jumin
-     */
-    public Student(String name, String jumin) {
-        this.name = name;
-        this.jumin = jumin;
-    }
-
     /** ----------------------name start--------------------- */
     public String getName() {
         return name;
     }
+
+    /**
+     *
+     * @param name {String} main에서 전달받는 학생 이름
+     * @return {boolean} 정상적으로 set됐는지 반환
+     */
     public boolean setName(String name) {
         try {
             if (Pattern.matches(nameRegex, name)) {
@@ -50,14 +46,14 @@ public class Student implements RegexIF{
     /**
      * 주민등록번호를 전달받아 형식에 맞는지 예외처리를 합니다.
      *
-     * 주민번호 세부 정규식
+     * 주민번호 세부 정규식 ( 단순 조건문 -> 제외 )
      * 29일인 달(윤년) : 앞 2자리 % 4 == 0
      * 28일인 달(평년) : 앞 2자리 % 4 != 0
      * 31일인 달 : 1, 3, 5, 7, 8, 10, 12
      * 30일인 달 : 4, 6, 9, 11
      *
-     * @param jumin
-     * @return
+     * @param jumin {String} 학생 주민번호
+     * @return {boolean} 정상적으로 set됐는지 확인
      */
     public boolean setJumin(String jumin) {
         try {

@@ -18,8 +18,8 @@ public class IO_Buffer_Ex01 {
         /*for (int i = 0; i < 5; i++) {
             data[i] = sc.nextInt();
         }
-        for (int temp : data) {
-            System.out.print(temp + " " );
+        for (int CountChar : data) {
+            System.out.print(CountChar + " " );
         }
         System.out.println();
 
@@ -39,8 +39,8 @@ public class IO_Buffer_Ex01 {
         }
 
         for(int temp: data) {
-//            System.out.print(temp + " ");
-            bw.write(temp + " "); // 버퍼에 작성 -> bw.write(temp)로 하면 안 되고, temp + " "를 해야 출력이 제대로 되는 이유를 알아보자.
+//            System.out.print(CountChar + " ");
+            bw.write(temp + " "); // 버퍼에 작성 -> bw.write(CountChar)로 하면 안 되고, CountChar + " "를 해야 출력이 제대로 되는 이유를 알아보자.
         }
 //        System.out.println();
         bw.flush(); // 화면에 출력
